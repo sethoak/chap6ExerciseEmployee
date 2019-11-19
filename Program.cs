@@ -6,7 +6,19 @@ namespace Csharp_EmployeeExercise
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Company RandRCo = new Company;
+            Employee Pete = new Employee;
+            Employee Paul = new Employee;
+            Employee Pierce = new Employee;
+
         }
+
+        List<Employee> employees = new List<Employee>()
+        {
+            Pete,
+            Paul,
+            Pierce
+        };
+
     }
 }

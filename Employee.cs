@@ -1,13 +1,23 @@
 using System;
+using System.Collections.Generic;
 
-namespace EmployeeList
+namespace CorpExercise
 {
-    public class EmployeeList
+    public class Employee
     {
-        public string firstName { get; set; };
-        public string lastName { get; set; };
-        public string title { get; set; };
-        public DateTime startDate { get; set; };
+        public Employee(string first, string last, string title, DateTime startDate)
+        {
+            _firstName = first;
+            _lastName = last;
+            _title = title;
+            _startDate = startDate;
+        }
+
+        public string _firstName { get; }
+        public string _lastName { get; }
+        public string _title { get; }
+        public string _startDate { get; }
+        public GroupPeople CurrentGroup { get; set; }
+        public List<Exercise> Exercises = new List<Exercise>();
     };
-}
 }
